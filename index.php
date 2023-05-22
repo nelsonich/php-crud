@@ -12,9 +12,9 @@ use System\Router;
 
 $router = new Router();
 
-$router->get('/api/', ItemController::class . '::getAll');
-$router->post('/api/', ItemController::class . '::create');
-$router->put('/api/', ItemController::class . '::update');
-$router->delete('/api/', ItemController::class . '::delete');
+$router->get('/api/items', ItemController::class . '::getAll');
+$router->post('/api/items', ItemController::class . '::create');
+$router->put('/api/items', ItemController::class . '::update');
+$router->delete('/api/items', ItemController::class . '::delete');
 
 $router->run();
